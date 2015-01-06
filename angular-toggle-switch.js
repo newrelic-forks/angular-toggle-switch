@@ -16,7 +16,7 @@
     };
   });
 
-  module.directive('toggleSwitch', function (toggleSwitchConfig) {
+  module.directive('toggleSwitch', ['toggleSwitchConfig', function (toggleSwitchConfig) {
     return {
       restrict: 'EA',
       replace: true,
@@ -76,5 +76,5 @@
         };
       }
     };
-  });
+  }]);
 })();
